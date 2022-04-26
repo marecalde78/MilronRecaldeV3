@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MilronRecaldeV3.Registro">
+
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="lblTitle" Text="INGRESO DE NOTAS" FontSize="Title" TextColor="Blue"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- INGRESO DATOS -->
+                    <Label x:Name="label1" class="midTitle" Text="Registre los datos de su Pago" FontSize="Medium" TextColor="DarkGreen"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+                   
+                    
+                    <Label Text="  Nombre"  Grid.Row="1"  FontSize="Medium" Grid.Column="0"></Label>
+                    <Entry x:Name="txtNombre" Grid.Row="1" Grid.Column="1" Keyboard="Text"  TextChanged="txtNombre_TextChanged"></Entry>
+
+                    <Label Text="  Monto Inicial" Grid.Row="2" FontSize="Medium" Grid.Column="0"></Label>
+                    <Entry x:Name="txtMontoInicio" Grid.Row="2" Grid.Column="1" Keyboard="Numeric" TextChanged="txtMontoInicio_TextChanged" ></Entry>
+
+                    <Label Text=" Pago Mensual"  FontSize="Medium" Grid.Row="3" Grid.Column="0"></Label>
+                    <Entry x:Name="txtPagoMensual" Grid.Row="3" Grid.Column="1" IsReadOnly="True"></Entry>
+
+                    <Button x:Name="buttonCalcular" Grid.Row="11" Grid.Column="0" Text="Calcular" Clicked="buttonCalcular_Clicked"></Button>
+
+                    <Button x:Name="buttonGuardar" Grid.Row="11" Grid.Column="1" Text="Guardar" Clicked="buttonGuardar_Clicked" ></Button>
+
+
+
+                    <Label Text="Calculo" Grid.Row="10" Grid.Column="0"></Label>
+                    <Entry x:Name="txtCalculo" Grid.Row="3" Grid.Column="1" IsReadOnly="True"></Entry>
+
+
+
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+
+
+
+
+</ContentPage>

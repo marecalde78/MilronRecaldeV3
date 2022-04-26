@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MilronRecaldeV3.Login">
+
+    <StackLayout>
+        <Label Text="Ingreses su Usuario y Clave:"/>
+        <Frame>
+            <StackLayout>
+                <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+                <Label Text="Usuario"/>
+                <Entry Placeholder="Usuario" x:Name="Usuario"/>
+
+                <Label Text="Clave"/>
+                <Entry Placeholder="Clave" x:Name="Clave" IsPassword="True"/>
+                <Button Text="Ingresar" Clicked="Button_Clicked"/>
+
+            </StackLayout>
+
+
+        </Frame>
+
+
+    </StackLayout>
+
+</ContentPage>
